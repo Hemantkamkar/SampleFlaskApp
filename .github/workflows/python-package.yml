@@ -82,5 +82,5 @@ jobs: #collection of jobs
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/SampleFlaskApp:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/sampleflaskapp:latest
 
