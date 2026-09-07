@@ -40,13 +40,7 @@ jobs: #collection of jobs
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest --cov=app --cov-report=xml:coverage.xml
-        cat coverage.xml
-    - name: Upload coverage to artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: coverage-report
-        path: coverage.xml
+        pytest
 
   sonarqube-scanner: #job2
     name: Build and analyze
