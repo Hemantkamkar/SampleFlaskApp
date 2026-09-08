@@ -17,7 +17,10 @@ pythonapp
 - docker-compose up -d
 - docker volume ls
 - docker ps
-
+  
+# Run jenkins server and get the password commands
+- docker run -p 8080:8080 -p 50000:50000 -d --name jenkins --restart=on-failure -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk21
+- docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 
 
 
