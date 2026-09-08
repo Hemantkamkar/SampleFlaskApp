@@ -13,6 +13,11 @@ pythonapp
 - vi docker-compose.yml
 - paste docker-compose.yml code
 
+# Execute commands
+- docker-compose up -d
+- docker volume ls
+- docker ps
+
 
 
 
