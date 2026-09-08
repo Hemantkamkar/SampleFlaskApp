@@ -11,6 +11,7 @@ pythonapp
 
 # Create docker compose yaml file
 - vi docker-compose.yml
+- paste docker-compose.yml code
 
 
 
