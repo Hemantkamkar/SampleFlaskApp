@@ -9,6 +9,10 @@ pythonapp
 
 - Check Docker Compose Version - `docker-compose --version`
 
+# Create docker compose yaml file
+- vi docker-compose.yml
+
+
 
 
 
